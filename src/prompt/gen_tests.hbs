@@ -1,0 +1,27 @@
+{{{system}}}
+
+Here is the coverage-annotated excerpt that you need to work on:
+
+{{{excerpt}}}
+
+Your task is to add more test code to trigger the **uncovered lines** in **this excerpt only**.
+To do so, you should return **ONE TO FIVE** MoonBit test block(s) surrounded by **A SINGLE** markdown code block with language `moonbit`.
+
+Also, please note that your output must only include the tests (i.e. the functions starting with the `test` keyword), without any analyses or annotations.
+In addition, each test block should only test **only** what is presented the excerpt, **not** any other functions in the file.
+Please note that each test you add **must** involve triggering at least a currently-uncovered line.
+
+Finally, since you will be writing **BLACK-BOX** tests, it is only possible to call **PUBLIC** APIs within your tests.
+That is, you are only allowed to call functions annotated with the `pub` keyword.
+Otherwise, the compiler will complain that `The value identifier ... is unbound.`
+{{{qualify}}}
+
+For your reference, below is the coverage-annotated original source file `{{{name}}}` in a MoonBit project called `{{{project}}}`, from which originated the above excerpt:
+
+{{{coverage}}}
+
+Here is the public API interface of the current package `@{{{package}}}`:
+
+{{{interface}}}
+
+{{{importedInterfaces}}}

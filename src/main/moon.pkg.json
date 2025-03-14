@@ -1,0 +1,12 @@
+{
+  "is-main": true,
+  "import": [
+    "moonbitlang/agent_coverage/agent",
+    "moonbitlang/agent_coverage/jsext",
+    "moonbitlang/agent_coverage/log",
+    "moonbitlang/agent_coverage/mbt",
+    "moonbitlang/agent_coverage/path",
+    "moonbitlang/x/fs",
+    "rami3l/js-ffi/js"
+  ]
+}

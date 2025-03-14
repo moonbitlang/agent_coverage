@@ -1,0 +1,31 @@
+The coverage testing has discovered the following parts of the function is not covered by existing test cases.
+The format of the coverage report is as follows:
+
+```moonbit
+L{line number}{coverage} {line content}
+```
+
+For example, let's assume that your would like to test the following function:
+
+```moonbit
+L1 fn abs(n : Int) -> Int {
+L2   if n >= 0 {
+L3     n
+L4   } else {
+L5{{{ uncoveredMarker }}}     -n
+L6   }
+L7 }
+```
+
+At the beginning of each line, `L{line number}` indicates the line number in the source code, followed by a box indicating the coverage info.
+
+If the box looks like this `[UNCOVERED]`, it means this line is **uncovered** by any test cases, and thus you should work on writing test cases to cover this line later on.
+On the other hand, if the box looks like this ``, it means this line is already covered.
+
+In the example above, line 5 (`L5`) is not covered by any test cases, and you may cover this line by writing the following:
+
+```moonbit
+test "abs of a negative number" {
+  inspect!(abs(-1), content="1")
+}
+```

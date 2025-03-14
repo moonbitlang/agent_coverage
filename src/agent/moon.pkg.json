@@ -1,0 +1,12 @@
+{
+  "import": [
+    "moonbitlang/agent_coverage/jsext",
+    "moonbitlang/agent_coverage/log",
+    "moonbitlang/agent_coverage/mbt",
+    "moonbitlang/agent_coverage/text",
+    "moonbitlang/agent_coverage/path",
+    "moonbitlang/agent_coverage/prompt",
+    "moonbitlang/x/fs",
+    "rami3l/js-ffi/js"
+  ]
+}

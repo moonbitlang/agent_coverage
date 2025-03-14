@@ -1,0 +1,6 @@
+{
+  "import": [
+    "moonbitlang/x/fs",
+    "rami3l/js-ffi/js"
+  ]
+}

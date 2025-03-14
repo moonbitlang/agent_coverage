@@ -1,0 +1,12 @@
+{
+  "name": "moonbitlang/agent_coverage",
+  "version": "0.1.0",
+  "deps": {
+    "moonbitlang/x": "0.4.21",
+    "rami3l/js-ffi": "0.2.2"
+  },
+  "readme": "README.md",
+  "keywords": [],
+  "description": "",
+  "source": "src"
+}

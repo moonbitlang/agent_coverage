@@ -1,0 +1,7 @@
+{
+  "import": [
+    "moonbitlang/agent_coverage/jsext",
+    "moonbitlang/agent_coverage/sys",
+    "rami3l/js-ffi/js"
+  ]
+}
