@@ -298,10 +298,10 @@ pub fn Project::package_dir!(self : Project, package_name : String) -> String {
 ///   - The full package name starting with `moonbitlang/core`.
 ///   - If `force_full` is set to `false`, the short package name (e.g. `cmark_renderer`).
 ///
-/// - `force_fill`: Whether to force the full package name.
+/// - `force_full`: Whether to force the full package name.
 ///   If this flag is set to `true` and `packageName`
 ///   does not start with the module/project name or `moonbitlang/core`,
-///   this function will return `null`.
+///   this function will return `None`.
 pub fn Project::package_mbti_path!(
   self : Project,
   package_name : String,
