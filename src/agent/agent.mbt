@@ -160,7 +160,7 @@ pub async fn Agent::generate_unverified_test_cases!(
   }
   let base_params = {
     "coverage": coverage_toplevels.to_json(),
-    "importedInterfaces": String::concat(separator="\n\n", imported_interfaces).to_json(),
+    "importedInterfaces": @string.concat(separator="\n\n", imported_interfaces).to_json(),
     "interface": read_mbti!(package_).to_json(),
     "name": src_file.to_json(),
     "package": package_.to_json(),
