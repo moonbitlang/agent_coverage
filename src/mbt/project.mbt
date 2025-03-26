@@ -433,7 +433,7 @@ fn Project::_run[T](
   for opts in opts {
     opts1.extend_iter2(opts)
   }
-  let cmd_str = String::concat(separator=" ", [cmd] + args)
+  let cmd_str = @string.concat(separator=" ", [cmd] + args)
   @log.g().debug("running subcommand: \{cmd_str}")
   spawnFn(cmd, args, opts1)
 }

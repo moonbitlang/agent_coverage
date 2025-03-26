@@ -5,7 +5,7 @@ pub let moonbitlang_core = "moonbitlang/core"
 pub fn fn_name(toplevel : Toplevel) -> String? {
   let rest = for ln in @text.split_lines(toplevel) {
     let rest_segments = ln.split(" ").drop(1).to_array()
-    let rest = String::concat(separator=" ", rest_segments)
+    let rest = @string.concat(separator=" ", rest_segments)
     if not(rest.starts_with("//")) {
       break rest
     }
@@ -108,7 +108,7 @@ pub fn toplevel_lines(src_text : String) -> Array[ToplevelLines] {
   guard segment_count >= 3 else { [] }
   let res = [
     @text.split_lines(segments[0]).to_array(), // File header
-    @text.split_lines(String::concat(segments[1:3].iter().to_array())).to_array(),
+    @text.split_lines(@string.concat(segments[1:3].iter().to_array())).to_array(),
   ]
   for i = 3; i < segment_count; i = i + 2 {
     let delimiter = segments[i]
