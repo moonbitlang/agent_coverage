@@ -28,7 +28,7 @@ pub fn HandleBarsTemplate::render!(
   self : HandleBarsTemplate,
   data : Json
 ) -> String {
-  (self._)(@js.Object(@json.from_json!(data)))
+  (self._)(@js.Object::from_value_unchecked(@json.from_json!(data)))
 }
 
 ///|

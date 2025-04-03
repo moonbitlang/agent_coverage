@@ -3,9 +3,13 @@ pub struct ExpectFailure {
   filename : String
   index : String
   message : ExpectFailureMessage
-  package : String
+  pkg : String
   test_name : String
-} derive(Show, FromJson, ToJson)
+} derive (
+  Show,
+  FromJson(fields(pkg(rename="package"))),
+  ToJson(fields(pkg(rename="package"))),
+)
 
 ///|
 pub struct ExpectFailureMessage {
