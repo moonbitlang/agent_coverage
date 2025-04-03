@@ -89,7 +89,7 @@ pub fn moonfmt!(src_text : String) -> String {
   let raw_res : @js.Value = spawn_sync_ffi(
     "moonfmt",
     ["-"],
-    @js.Object(
+    @js.Object::from_value_unchecked(
       @json.from_json!({ "input": src_text.to_json(), "stdio": "pipe" }),
     ),
   ).get_with_string("stdout")
