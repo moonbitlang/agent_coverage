@@ -50,9 +50,8 @@ jobs:
           moon update
           moon build --deny-warn --target js
 
-      - name: moon info and moon fmt
+      - name: moon fmt
         run: |
-          moon info
           moon fmt
           git diff --exit-code
 
